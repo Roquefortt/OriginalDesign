@@ -5,12 +5,13 @@ void setup()
 {
 	frameRate(30);
 
-	size(200,200); 
+	size(200, 200); 
+	background(191, 200, 205);
 	noStroke();
-	fill(173,140,115);
-	rect(0,130,200,50);
-
-}
+	fill(173, 140, 115);
+	rect(0, 150, 200, 150);
+	
+	}
 
 void draw()
 {
@@ -23,9 +24,9 @@ void draw()
 	ellipse(100,y,4,15);
 
 //center of flower
-	if (y < 100) {
+	if (y < 95) {
 
-		noLoop();
+		y = 94;
 
 		fill(64,175,202);
 		ellipse(100,90,15,15);
@@ -33,7 +34,7 @@ void draw()
 }
 
 void mouseClicked() {
-	
+
 	fill(64,175,202);
 
 	beginShape();
