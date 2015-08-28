@@ -55,20 +55,33 @@ void mouseClicked() {
   bezierVertex(50, 125, 90, 150, 100, 100);
   bezierVertex(90, 120, 55, 100, 55, 100);
   endShape();
-  
+
+  fill(74,140,56);
+  ellipse(100,95,4,15);
+
   fill(253, 225, 175);
   ellipse(100, 94, value, value);
+
+  fill(0,0,0);
+  ellipse(100,95,4,15);
 
   }
 
 void keyPressed() {
   setup();
-  
+
   frameRate(20);
   y = 95;
   fill(251, 255, 41);
   ellipse(100, 94, value, value);
   value = value + 5;
+
+  if (value > 20) 
+  {
+  	stroke(50);
+  	fill(0, 0, 0);
+  	text(":)", 95, 95);
+  }
 }
 
 /*
