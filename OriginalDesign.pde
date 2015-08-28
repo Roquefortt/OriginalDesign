@@ -40,9 +40,10 @@ void draw()
   
   if ( value > 30) {
     value = 15;
+  }
 }
-}
-void mouseClicked() {
+
+void petals() {
 
   fill(64,175,202);
 
@@ -55,6 +56,12 @@ void mouseClicked() {
   bezierVertex(50, 125, 90, 150, 100, 100);
   bezierVertex(90, 120, 55, 100, 55, 100);
   endShape();
+
+}
+
+void mouseClicked() {
+
+  petals();
 
   fill(74,140,56);
   ellipse(100,95,4,15);
