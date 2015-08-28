@@ -69,8 +69,11 @@ void keyPressed() {
   fill(251, 255, 41);
   ellipse(100, 94, value, value);
   value = value + 5;
+  
+  if (value > 100) {
+    point(50, 60);
+  }
 }
-
 /*
     vertex(100, 70);
     bezierVertex(150, 50, 150, 125, 100, 125);
